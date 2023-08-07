@@ -3,7 +3,6 @@
 # xongptshnvm
 
    - xonsh (bash &amp; python) &amp; nvm (node version manager) environment for Llama2, gpt4all, LocalAI, gpt4free, git-llm, large foundational model API's, local-llm etc LogSeq integration and Zettelkasten note-taking 'knowledge base'
-   - Human and agent readable readme.md, agents proceed to robots.md afterward
    - Projects primary goals:
        - Maintenance of a 'text:text' [[RLHF]] training and conversational database for all LLM interactions within the system
        - Maintenance of 'requirements.txt', 'package.json', 'instructions.md', and other persistence and reproduction schemas for all elements and dependencies
