@@ -1,4 +1,4 @@
-<|SOS|> `xongptshnvm`
+<|SOS|> `xongptshnvm: LLM shell and file system environment for code execution and open source software usage`
 
 # xongptshnvm
 
@@ -158,7 +158,7 @@ To create a clear structure, consider the following rules of thumb:
    - Loose coupling between modules [[Loose Coupling]]
    - Separation of concerns [[Separation of Concerns]]
    - Use load balancers to distribute requests [[Load Balancing]]
-	 - Virtual environments for isolation [[Virtual Environments]]
+   - Virtual environments for isolation [[Virtual Environments]]
    - Pip and PyPI and Miniconda for installing packages [[Pip, PyPI, Conda]]  
    - Setuptools for wrapping and distributing [[Setuptools]]
    - Assertions to catch issues early [[Assertions]]
