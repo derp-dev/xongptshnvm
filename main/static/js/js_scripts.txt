@@ -1,0 +1,9 @@
+It waits for the window to load (window.onload = function() { ... }) before executing the code inside the function.
+    It retrieves references to the relevant DOM elements (replInput, replOutput, markdownEditor) based on their respective id attributes.
+    It adds an event listener to the replInput element for the keydown event. When the "Enter" key is pressed, it prevents the default behavior (submitting a form or creating a new line) and performs the following actions:
+        Retrieves the code entered in the replInput textarea.
+        Clears the replInput textarea.
+        Sends a POST request to the '/generate' endpoint with the code as JSON data.
+        Processes the response: If the status is 'success', it appends the message to the replOutput textarea; otherwise, it appends an error message.
+        Handles any errors that may occur during the request or response.
+    It adds an event listener to the markdownEditor element for the keydown event. When the "Tab" key is pressed, it prevents the default behavior (adding a tab character) and instead inserts a tab character at the current cursor position in the markdownEditor textarea.

@@ -1,0 +1,33 @@
+The index.html file located in the templates directory provides the HTML structure and content for the main web page of the application. Here's an explanation of the different elements in the file:
+
+    <!DOCTYPE html>: This line declares the document type as HTML5.
+
+    <html lang="en">: The opening tag of the HTML document, with the lang attribute specifying the language as English.
+
+    <head>: The head section of the HTML document, containing meta information and references to external resources.
+
+    <meta charset="UTF-8">: Specifies the character encoding for the document as UTF-8, which supports a wide range of characters.
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">: Sets the viewport properties for responsive design, ensuring the page adapts to different devices and screen sizes.
+
+    <title>Python REPL</title>: The title of the web page, which will be displayed in the browser's title bar or tab.
+
+    <link rel="stylesheet" href="/static/css/styles.css">: This line includes a reference to the CSS file styles.css located in the /static/css directory. It applies the specified styles to the HTML elements within the page.
+
+    <body>: The opening tag for the body section of the HTML document, which contains the visible content of the web page.
+
+    <div id="repl-container">: A container div element with the ID "repl-container" that wraps the Python code input area.
+
+    <textarea id="repl" placeholder="Enter Python code here..."></textarea>: A textarea element with the ID "repl" and a placeholder text, allowing users to enter Python code.
+
+    <div id="markdown-container">: A container div element with the ID "markdown-container" that wraps the Markdown text input area.
+
+    <textarea id="markdown" placeholder="Enter Markdown text here..."></textarea>: A textarea element with the ID "markdown" and a placeholder text, allowing users to enter Markdown text.
+
+    <button id="execute">Execute</button>: A button element with the ID "execute", which triggers the execution of the entered Python code.
+
+    <div id="output"></div>: A div element with the ID "output", where the output of the executed Python code will be displayed.
+
+    <script src="/static/js/scripts.js"></script>: This line includes a reference to the JavaScript file scripts.js located in the /static/js directory. It adds interactivity and functionality to the web page by executing the JavaScript code.
+
+The index.html file serves as the main user interface for the web application, providing an interface to input Python code, Markdown text, and execute the code. The output is displayed in the designated area, and the CSS file styles.css and JavaScript file scripts.js are linked to enhance the visual appearance and functionality of the page, respectively.
