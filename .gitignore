@@ -1,0 +1,42 @@
+<!-- windows apps -->
+scoop/
+WezTerm/
+Telegram/
+.vscode/
+
+<!-- Ignore environments -->
+*.venv
+venv/
+*.env
+
+<!-- Ignore logs and databases -->
+*.log
+*.sql
+*.sqlite
+
+<!-- github apps -->
+LocalAI/
+agency/
+ChatGPT_Automation/
+chatgpt-plugin/
+aim/
+beebot/
+codeinterpreter-api/
+aider/
+anything-llm/
+gorilla/
+semantickernal/
+taotie/
+privateGPT/
+DevOpsGPT/
+ama_prompting/
+researcher-gpt/
+OpenAIAuth/
+pandas-ai/
+Free-Auto-GPT/
+Local-LLM-Langchain/
+code-it/
+AgentForge/
+BMTools/
+git-llm/
+gpt4free/
