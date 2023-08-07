@@ -1,0 +1,45 @@
+https://docs.rapidapi.com/docs/response-headers
+https://docs.rapidapi.com/docs/api-requests-getting-started
+
+```
+Depending on the API's configuration, API consumers will receive the following headers from the RapidAPI Proxy:
+
+access-control-allow-credentials
+See the MDN docs.
+
+access-control-allow-origin
+See the MDN docs.
+
+content-type
+The format of the body returned in the response.
+
+date
+The date and time of the response.
+
+server
+The version of the RapidAPI Proxy.
+
+x-rapidapi-mock-response
+Set to true when the RapidAPI Proxy generates the response (i.e. the response is not generated from the provider).
+
+x-rapidapi-region
+The AWS region that hosts the RapidAPI Proxy.
+
+x-rapidapi-version
+The version of the RapidAPI Proxy.
+
+x-ratelimit-requests-limit
+This is a static value indicating the number of requests the plan you are currently subscribed to allows you to make before incurring overages.
+
+x-ratelimit-requests-remaining
+The number of requests remaining (from your plan) before you reach the limit of requests your application is allowed to make. When this reaches zero, you will begin experiencing overage charges. This will reset each day or each month, depending on how the API pricing plan is configured. You can view these limits and quotas on the pricing page of the API in the RapidAPI Hub.
+
+x-ratelimit-requests-reset
+Indicates the number of seconds until the quota resets. This number of seconds would at most be as long as either a day or a month, depending on how the plan was configured.
+
+Additionally, for every billing object defined by the API provider that is attached to a plan and a set of endpoints in it, there will be three response headers that are similar in purpose to the three x-ratelimit headers described above. For example, if you have a billing object named My-Object-1, the following three response headers would be sent:
+
+    x-ratelimit-my-object-1-limit
+    x-ratelimit-my-object-1-remaining
+    x-ratelimit-my-object-1-reset
+``` 
