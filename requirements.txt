@@ -12,5 +12,6 @@ llama-index
 requests
 flask
 openai
+chainlit
 # git+https://github.com/jina-ai/langchain-serve.git
 # git+https://github.com/xtekky/gpt4free.git
