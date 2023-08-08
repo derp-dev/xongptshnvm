@@ -4,6 +4,17 @@ from dotenv import load_dotenv
 
 @cl.on_message
 async def main(message: str):
+    """A decorator for a ChainLit base class that modifies function behavior without changing the code, similar to ABCs in Python.
+
+    ChainLit runs an event loop in the background, monitoring for new messages. When a new message arrives, ChainLit checks for any functions decorated with @cl.on_message.
+   
+    The decorated function, such as main(), defines the message payload as its first parameter. The decorator populates this parameter with the payload when the function is called.
+   
+    Alternatively, the decorator can pass the full event as a dictionary using .event. You can access attributes like .event['message'], .event['type'], and more.
+  
+    You also have the option to wrap the function to extract specific arguments from the event dictionary.
+    """
+
     # Your custom logic goes here...
 
     def local_chat_completion(model, messages):
