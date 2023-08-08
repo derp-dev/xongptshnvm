@@ -2,8 +2,9 @@ import requests, openai, os
 from dotenv import load_dotenv
 
 load_dotenv()  # Call the load_dotenv function to load environment variables from the .env file
-url = "http://localhost:8080/v1/completions"  # Replace with the URL of your dockerized application: LocalAI
 rapidapi = os.getenv("rapidapi_key")  # Access the rapidapi_key environment variable using os.getenv()
+
+url = "http://localhost:8080/v1/completions"  # Replace with the URL of your dockerized application: LocalAI
 prompt = ["Write a python program which provides the dot product of its arguments using only os and sys no imports"]
 headers = {
     "Content-Type": "application/json",

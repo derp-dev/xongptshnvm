@@ -19,6 +19,7 @@ The date and time of the response.
 server
 The version of the RapidAPI Proxy.
 
+https://docs.rapidapi.com/docs/keys
 x-rapidapi-mock-response
 Set to true when the RapidAPI Proxy generates the response (i.e. the response is not generated from the provider).
 

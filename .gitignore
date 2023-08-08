@@ -13,6 +13,7 @@ venv/
 *.log
 *.sql
 *.sqlite
+.scratch/
 
 <!-- github apps -->
 LocalAI/
@@ -41,5 +42,8 @@ BMTools/
 git-llm/
 gpt4free/
 data-centric-ai/
+gpt-prompt-engineer/
+privateGPT/
+Quivr/
 
 <!-- ubuntu apps -->
