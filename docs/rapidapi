@@ -1,5 +1,9 @@
-https://docs.rapidapi.com/docs/response-headers
-https://docs.rapidapi.com/docs/api-requests-getting-started
+<https://docs.rapidapi.com/docs/response-headers>
+<https://docs.rapidapi.com/docs/api-requests-getting-started>
+        """
+         rapidapi = os.getenv("rapidapi_key")
+         run_api_request function sends an HTTP POST request to a specified URL. It includes headers, data, and uses the requests library to send the request. The response is then printed.
+        """
 
 ```
 Depending on the API's configuration, API consumers will receive the following headers from the RapidAPI Proxy:
@@ -43,4 +47,4 @@ Additionally, for every billing object defined by the API provider that is attac
     x-ratelimit-my-object-1-limit
     x-ratelimit-my-object-1-remaining
     x-ratelimit-my-object-1-reset
-``` 
+```

@@ -16,7 +16,7 @@ venv/
 .scratch/
 main/agents/__pycache__/
 main/app/__pycache__/
-
+main/app/app/.chainlit/.langchain.db
 
 <!-- github apps -->
 LocalAI/
@@ -48,5 +48,7 @@ data-centric-ai/
 gpt-prompt-engineer/
 privateGPT/
 Quivr/
+SocialAGI/
+meili/
 
 <!-- ubuntu apps -->
