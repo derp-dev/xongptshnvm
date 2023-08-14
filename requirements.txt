@@ -15,3 +15,6 @@ openai
 chainlit
 # git+https://github.com/jina-ai/langchain-serve.git
 # git+https://github.com/xtekky/gpt4free.git
+py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
+py -m pip install nvidia-cuda-runtime-cu12
+
