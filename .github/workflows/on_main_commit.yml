@@ -108,7 +108,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const REPLY = process.env.REPLY
+            const REPLY = process.env.REPLY;
             if (REPLY) {
               github.rest.issues.createComment({
                 issue_number: context.issue.number,
@@ -116,4 +116,4 @@ jobs:
                 repo: context.repo.repo,
                 body: `🤖: ${REPLY}`
               });
-              
+            }
