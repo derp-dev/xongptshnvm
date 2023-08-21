@@ -1,20 +1,40 @@
-# Optional: scoop for windows (drop-in apt-get replacement)
-# WezTerm, kitty, etc. for windows
-# Telegraph for windows
+# <!---- python ---->
+spacy
+docker
+xonsh
+playwright
 langChain
 jupyter
 jupyterLab
-# bitsandbytes **os-specific**
-# cuda **os-specific**
-llama-cpp-python
-llama-index
-# git+https://github.com/go-skynet/LocalAI.git
 requests
 flask
+langsmith[all]
+langsmith[all]
+flask[all]
+g4f
+e2b
+wandb
 openai
-chainlit
-# git+https://github.com/jina-ai/langchain-serve.git
+chainlit[all]
+openai[embeddings]
+openai[wandb]
+openai[datalib]
+
+# <!---- nvidia ---->
+# py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
+# py -m pip install nvidia-cuda-runtime-cu12
+# bitsandbytes **os-specific**
+# cuda **os-specific**
+# llama-cpp-python
+# llama-index
+# localAI https://localai.io/basics/getting_started/index.html
+# git+https://github.com/go-skynet/LocalAI.git
 # git+https://github.com/xtekky/gpt4free.git
-py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
-py -m pip install nvidia-cuda-runtime-cu12
+
+# <!---- gh_apps ---->
+# git+https://github.com/jina-ai/langchain-serve.git
+
+# <!---- windows11 ---->
+# scoop for windows (drop-in apt-get replacement)
+# WezTerm, kitty, windows terminal, etc. for windows
 

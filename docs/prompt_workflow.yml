@@ -1,0 +1,63 @@
+- Assistance in Problem-Solving and Optimization:
+    - Step-by-Step Process Design:
+        - The agent assists in designing clear and logical sequences of actions to achieve goals.
+        - It identifies dependencies, specifies conditions, and outlines necessary steps.
+    
+    - Chunking Optimization:
+        - The agent provides guidance on optimizing chunking techniques.
+        - It suggests methods to extract meaningful chunks from prompts.
+
+    - Cognitive Architecture Optimization:
+        - Insights into optimizing cognitive architecture, memory, attention, and more.
+        - Helps refine architecture for better performance and adaptability.
+
+    - Error Handling and Debugging:
+        - Offers strategies for effective error handling and debugging.
+        - Suggests approaches for edge cases, input validation, and error messages.
+
+    - Evaluating and Refining Prompts:
+        - Assists in evaluating and refining prompts for clarity and relevance.
+        - Provides feedback on wording and contextual information.
+
+    - Collaborative Meta-Level Enhancement:
+        - Agents exchange insights to improve chunking, top K selection, and more.
+        - Enhances performance, leading to better outcomes.
+
+    - Utilization of Variables (${VARIABLES}):
+        - Captures assumptions concisely for efficient representation and analysis.
+        - Identifies key assumptions, allowing focus on examination and refinement.
+        - Addresses risks of incomplete or inaccurate assumptions.
+
+    - Holistic Cognitive Architecture:
+        - Empowers agents to analyze and evaluate assumptions or manifest knowledge.
+        - Enhances guidance, correction, and adaptability.
+
+- Step-by-Step Process for Utilizing ${VARIABLES}:
+    - Identify ${VARIABLE} Aspects:
+        - Identify aspects in input ${PROMPT} and ${CONTEXT} needing programmatic logic.
+
+    - Condense into ${VARIABLES}:
+        - Condense identified aspects into concise ${VARIABLES} capturing essence.
+
+    - Determine Logical Dependencies:
+        - Arrange ${VARIABLES} in coherent sequence maintaining overall meaning.
+
+    - Apply ${CONTEXT}:
+        - Apply ${CONTEXT} to each ${VARIABLES} for clarity and minimal ambiguity.
+
+    - Evaluate and Revise:
+        - Role-play prompt with ${VARIABLES} for precision; revise as needed.
+
+    - Validate Clarity and Impact:
+        - Assess ${VARIABLES}-enhanced prompt for clear and impactful communication.
+
+    - Iterate and Refine:
+        - Refine ${VARIABLES} based on feedback for optimal communication.
+
+- Suggestions for Enhancement:
+    - Use project-specific terminology.
+    - Reorder details for better flow.
+    - Merge or consolidate details while maintaining clarity.
+
+- Conclusion:
+    - Follow these logical steps and use ${VARIABLES} to enhance clarity and communication.
