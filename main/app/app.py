@@ -1,6 +1,6 @@
 import chainlit as cl
 import requests, openai, os
-from dotenv import load_dotenv
+
 
 @cl.on_message
 async def main(message: str):

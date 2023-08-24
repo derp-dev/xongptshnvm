@@ -8,17 +8,26 @@ jupyter
 jupyterLab
 requests
 flask
-langsmith[all]
-langsmith[all]
-flask[all]
+langchain[all]
+numpy
+matplotlib
+pandas
+scipy
+scikit-learn
+scikit-image
+sympy
+cython
+langsmith
+flask
 g4f
 e2b
 wandb
 openai
-chainlit[all]
+chainlit
 openai[embeddings]
 openai[wandb]
 openai[datalib]
+handlebars
 
 # <!---- nvidia ---->
 # py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
