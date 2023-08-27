@@ -33,6 +33,7 @@ playwright[firefox]
 playwright[webkit]
 playwright[chromium]
 google-generativeai
+markdown
 
 # <!---- nvidia ---->
 # py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
