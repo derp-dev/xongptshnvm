@@ -1,0 +1,1 @@
+pip install -U -r .\requirements.txt 2>&1 | tee error_log.txt

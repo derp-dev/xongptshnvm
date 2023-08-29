@@ -112,3 +112,24 @@ npx cypress open
 //textgenwebui
 python server.py --auto-devices --no-stream --load-in-8bit --chat --listen --extensions openai
 <!-- 4 -->
+//how to baby pip through torch/transformers/deepspeed install
+pip install deepspeed 2>&1 | tee error_log.txt
+pip install -U -r .\requirements.txt 2>&1 | tee error_log.txt
+"""
+
+    pip install to run the install command
+    -r specifies using requirements.txt
+    -U upgrades packages
+    File path
+    Error redirect and logging
+    -U - Upgrades any already installed packages to their latest versions
+    .\requirements.txt - Specifies the path to the requirements file
+    2>&1 - Redirects stderr (file descriptor 2) to stdout (file descriptor 1), merging error and output streams
+    | - Pipes the merged streams to the next command
+    tee error_log.txt - Writes the piped input to both stdout and the error_log.txt file
+    This will Update any already installed packages
+    Install anything new from requirements.txt
+    Log all output, including any errors, to error_log.txt
+"""
+// DeepSpeed
+setx DS_BUILD_AIO 0 

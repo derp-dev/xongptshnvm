@@ -1,0 +1,39 @@
+#!/bin/bash
+# ==========================================================
+# Custom Bash Configurations
+# ==========================================================
+
+# H() function: Custom command history filtering and sorting
+# ----------------------------------------------------------
+
+H() {
+    # This command filters and sorts command history based on criteria provided to the function
+    history | egrep -v '^ *[[:digit:]]+ +H +' | grep "$@" | sort -rk 2 | uniq -f 1 | sort;
+}
+
+# Explanation of the H() function:
+# - `egrep -v '^ *[[:digit:]]+ +H +': This part filters out lines that match the pattern `^[[:digit:]]+ +H +`
+# - `grep "$@": Filters the remaining lines based on arguments provided to the H function
+# - `sort -rk 2`: Sorts the output in reverse order based on the second column
+# - `uniq -f 1`: Removes duplicate lines, considering all fields except the first
+# - Final `sort`: Performs a final sorting of the output
+
+# ==========================================================
+# Custom Functions
+# ==========================================================
+
+# backup() function: Create a backup copy of a file
+# ----------------------------------------------------
+
+# The backup() function creates a backup copy of a file with a ".bak" extension
+function backup() {
+    cp "$1" "$1.bak"
+}
+
+# Explanation of the backup() function:
+# - The $1 refers to the first argument passed to the function (the filename you want to back up)
+# - $1.bak represents the backup filename with the ".bak" extension
+
+# ==========================================================
+# End of Custom Bash Configurations
+# ==========================================================
