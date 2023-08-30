@@ -12,10 +12,9 @@ docs/help
 apps/jupyter/
 apps/jupyter-pytorch
 apps/gh_apps/
-apps/win_apps/
 apps/python/
 apps/v18.17.1
-
+apps/winapps/
 
 # <!-- Ignore environments -->
 *.venv
