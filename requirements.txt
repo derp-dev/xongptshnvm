@@ -1,15 +1,20 @@
 # <!---- python ---->
+# py -m pip install --upgrade pip
+# py -m pip install --upgrade setuptools
+# py -m pip install --upgrade wheel
+# py -m pip install --upgrade pipenv
+# py -m pip install --upgrade poetry
+
 spacy
 docker
 xonsh
-playwright
 langChain
 jupyter
 jupyterLab
 requests
 flask
 langchain[all]
-langsmith[all]
+langsmith
 chainlit
 numpy
 matplotlib
@@ -19,9 +24,8 @@ scikit-learn
 scikit-image
 sympy
 cython
-flask
+flask[all]
 g4f
-e2b
 wandb
 openai
 openai[embeddings]
@@ -49,7 +53,11 @@ markdown
 # <!---- gh_apps ---->
 # git+https://github.com/jina-ai/langchain-serve.git
 
-# <!---- windows11 ---->
+# <!---- apt-get ubuntu ---->
+# cmatrix
+# nvidia-cuda-toolkit
+# neovim
+
+# <!---- winapps ---->
 # scoop for windows (drop-in apt-get replacement)
 # WezTerm, kitty, windows terminal, etc. for windows
-
