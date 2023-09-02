@@ -20,7 +20,7 @@ macros/
 old/
 scratch/
 *.scratch/
-docs/
+docs/help/
 
 # GitHub apps
 aim/
