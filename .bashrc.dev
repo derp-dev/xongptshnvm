@@ -14,10 +14,23 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
-    # alias vdir='vdir --color=auto'
+    alias vdir='vdir --color=auto'
+    alias lll='ls -lka --color=auto'
+    alias ll='ls -alF --color=auto'
+    alias la='ls -A --color=auto'
+    alias l='ls -CF --color=auto'
+    alias cat='cat --color=auto'
+    alias tac='tac --color=auto'
+    alias more='more --color=auto'
+    alias less='less --color=auto'
     alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+    alias egrep='egrep --color=auto | tee'
+    alias fgrep='fgrep --color=auto | tee'
+    alias sed='sed --color=auto'
+    alias awk='awk --color=auto'
+    alias sort='sort --color=auto'
+    alias uniq='uniq --color=auto'
+    alias wc='wc --color=auto'
 fi
 # ----------------------------------------------------
 # don't put duplicate lines or lines starting with space in the history.
@@ -72,17 +85,14 @@ xterm*|rxvt*)
 esac
 # If this is an xterm set the title to user@host:dir
 
-
-
 # ==========================================================
 # Alias
 # ==========================================================
-alias lll='ls -lka --color=auto'
-alias ll='ls -alF --color=auto'
-alias la='ls -A --color=auto'
-alias l='ls -CF --color=auto'
-alias ..='.. /'
-# alias cr='history | grep <search_term>' # see (reverse-i-search)`' == "ctrl+r" below
+alias cd..='cd .. | pwd'
+alias cd...='cd ../.. | pwd'
+alias cd....='cd ../../.. | pwd'
+alias py='python3'
+# alias cr='history | grep ' # see (reverse-i-search)`' == "ctrl+r" below
 
 
 
@@ -91,7 +101,7 @@ alias ..='.. /'
 # ==========================================================
 
 # Reverse search through command history
-cr() {
+function cr() {
   if [ $# -eq 0 ]; then
     HISTTIMEFORMAT= history | perl -ne 'print if !$last || $last != $_' | grep -i "$(fc -ln -1 | sed "s/^\s*//")"
   else  
@@ -102,7 +112,7 @@ cr() {
 
 # ----------------------------------------------------	
 # H() function: Custom command history filtering
-H() {
+function H() {
     # This command filters and sorts command history based on criteria provided to the function
     history | egrep -v '^ *[[:digit:]]+ +H +' | grep "$@" | sort -rk 2 | uniq -f 1 | sort;
 }
@@ -195,7 +205,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
 # ----------------------------------------------------
 # NVM init
 export NVM_DIR="$HOME/.nvm"
@@ -203,6 +212,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/bin:$PATH"
 export PATH="/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1:$PATH"
+
+# ----------------------------------------------------
+#  GO init
+export PATH=$PATH:$HOME/.go/go/bin
+
+# ----------------------------------------------------
+#  CURSOR init
+export PATH=$PATH:$HOME/.cursor/squashfs-root
+
 
 # ==========================================================
 # End of Custom Bash Configurations
