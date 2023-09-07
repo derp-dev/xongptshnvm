@@ -133,3 +133,10 @@ pip install -U -r .\requirements.txt 2>&1 | tee error_log.txt
 """
 // DeepSpeed
 setx DS_BUILD_AIO 0 
+// kubernetes & kind & kubectl
+mkdir .go && cd .go && [download and install git]
+go install sigs.k8s.io/kind@v0.20.0 && kind create cluster
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-$(uname)-amd64
+chmod +x ./kind
+kind create cluster
+kubectl cluster-info --context kind-kind

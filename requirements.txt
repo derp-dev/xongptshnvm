@@ -1,21 +1,9 @@
-# <!---- python ---->
-# py -m pip install --upgrade pip
-# py -m pip install --upgrade setuptools
-# py -m pip install --upgrade wheel
-# py -m pip install --upgrade pipenv
-# py -m pip install --upgrade poetry
-
-spacy
-docker
-xonsh
-langChain
+transformers
+transformers[cuda]
+ctransformers
 jupyter
 jupyterLab
-requests
-flask
-langchain[all]
-langsmith
-chainlit
+requests  
 numpy
 matplotlib
 pandas
@@ -23,41 +11,52 @@ scipy
 scikit-learn
 scikit-image
 sympy
+spacy
 cython
-flask[all]
-g4f
-wandb
+docker
+xonsh
 openai
 openai[embeddings]
-openai[wandb]
-openai[datalib]
-openai[api]
 playwright
-playwright[firefox]
-playwright[webkit]
-playwright[chromium]
-google-generativeai
-markdown
+django[all] # see struct.txt for pre-pip structs
+mpi4py
+huggingface_hub
+llamacpp
+llama-cpp-python
+google.generativeai
+cohere
+aiohttp
+litellm
+openllm
+agent-protocol # AKA e2B agent-protocol  ## https://agentprotocol.ai/sdks/python
+huggingface_hub
 
 # <!---- nvidia ---->
+# torch ## CONDA USERS DO NOT PIP INSTALL TORCH!!! Do the following:
+# conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch-nightly -c nvidia //windows - rtx/geforce + CONDA 
+langchain[all]  ## see struct.txt for pre-pip structs
 # py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
 # py -m pip install nvidia-cuda-runtime-cu12
 # bitsandbytes **os-specific**
 # cuda **os-specific**
-# llama-cpp-python
-# llama-index
-# localAI https://localai.io/basics/getting_started/index.html
-# git+https://github.com/go-skynet/LocalAI.git
-# git+https://github.com/xtekky/gpt4free.git
+
 
 # <!---- gh_apps ---->
-# git+https://github.com/jina-ai/langchain-serve.git
-
-# <!---- apt-get ubuntu ---->
-# cmatrix
-# nvidia-cuda-toolkit
-# neovim
-
-# <!---- winapps ---->
-# scoop for windows (drop-in apt-get replacement)
-# WezTerm, kitty, windows terminal, etc. for windows
+git+https://github.com/go-skynet/LocalAI
+git+https://github.com/oobabooga/text-generation-webui
+git+https://github.com/kubernetes-sigs/kind
+# git+https://github.com/stochasticai/xTuring
+# git+https://github.com/xlang-ai/xlang
+git+https://github.com/imartinez/privateGPT
+git+https://github.com/enricoros/big-agi
+git+https://github.com/xtekky/gpt4free.git
+# git+https://github.com/PawanOsman/ChatGPT  ## https://github.com/PawanOsman/ChatGPT#self-host-your-own-api
+# git+https://github.com/stanfordnlp/dspy
+# git+https://github.com/Codium-ai/pr-agent  ## https://github.com/Codium-ai/pr-agent/blob/main/INSTALL.md#method-5-run-as-a-github-app
+# git+https://github.com/mlc-ai/mlc-llm
+# git+https://github.com/mlc-ai/web-llm  ## javascript web interface for mlc-llm
+git+https://github.com/chenhunghan/ialacol  ## kubernetes LocalAI
+git+https://github.com/closedai-project/closedai     ## https://github.com/closedai-project/closedai/tree/main/examples/custom_pipeline
+# https://github.com/continuedev/ggml-server-example ## https://continue.dev/docs/walkthroughs/codellama 
+# https://llm.datasette.io/en/stable/
+# git+https://github.com/jina-ai/langchain-serve.git  ## preq jina2, jina, jina[torch], jina[transformers], jina[spacy]
