@@ -3,21 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Python REPL</title>
-  <link rel="stylesheet" href="/static/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mdjourney</title>
+
+  <!-- Include CSS and JS libraries -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2023.05.1/pyscript.css">
+  <script src="https://pyscript.net/releases/2023.05.1/pyscript.js" defer></script>
+  <script src="/static/js/script.js"></script>
+
+  <!-- Include Markdown-it library -->
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 </head>
 
 <body>
-  <div id="repl-container">
-    <textarea id="repl" placeholder="Enter Python code here..."></textarea>
-  </div>
-  <div id="markdown-container">
-    <textarea id="markdown" placeholder="Enter Markdown text here..."></textarea>
-  </div>
-  <button id="execute">Execute</button>
-  <div id="output"></div>
-  <script src="/static/js/scripts.js"></script>
+  <h1>Markdown Editor</h1>
+
+  <!-- Markdown editor textarea -->
+  <textarea id="markdown-editor" style="width: 100%; height: 500px;"></textarea>
+
+  <h1>Shell Simulator</h1>
+
+  <!-- Shell input field -->
+  <input type="text" id="shell-input" style="width: 100%;" />
+
+  <script>
+    // Initialize Markdown-it
+    const md = window.markdownit();
+    const markdownEditor = document.getElementById('markdown-editor');
+    const shellInput = document.getElementById('shell-input');
+
+    // Event listener for Markdown editor changes
+    markdownEditor.addEventListener('input', () => {
+      const markdownText = markdownEditor.value;
+      const htmlText = md.render(markdownText);
+      // Update a preview pane or perform other actions with the HTML output
+    });
+
+    // Event listener for Shell input
+    shellInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        const shellCommand = shellInput.value;
+        // Simulate an error if there is no connection to the server
+        const isConnectedToServer = false; // You should set this based on server status
+        if (!isConnectedToServer) {
+          console.error('Error: No connection to the server.');
+        } else {
+          // Execute the shell command or perform other actions
+          console.log(`Executing shell command: ${shellCommand}`);
+        }
+        // Clear the input field
+        shellInput.value = '';
+      }
+    });
+  </script>
 </body>
 
 </html>
